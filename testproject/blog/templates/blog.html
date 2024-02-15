@@ -1,0 +1,14 @@
+{% extends 'basetemplate.html' %}
+{% load static %}
+{% block title %}
+<title>Blog</title>
+{% endblock %}
+{% block content %}
+    <h1>Myblog</h1>
+    {% for post in posts %}
+    <h2>{{post.title}}</h2>
+    <p>{{post.body}}</p>
+    {% endfor %}
+
+    <img src="{%static 'image/GT05.png'%}">
+{% endblock %}

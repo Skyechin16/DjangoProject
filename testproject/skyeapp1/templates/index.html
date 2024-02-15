@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <img src="{%static 'image/allin.jpg'%}">
+    <h1>{{name}}</h1>
+    <h1>Your age ={{age}}</h1>
+    <a href="/">หน้าแรก</a>
+    <a href="/about">เกี่ยวกับมหาวิทยาลัย</a>
+    <a href="/gallery">อัลบั้มรูปภาพ</a>
+    <h1 style="color: cadetblue;">หน้าหลัก</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolore, porro quidem molestias incidunt nulla magni? Dolores quas voluptates laboriosam ipsum quisquam tenetur, alias odio excepturi incidunt eum provident omnis?</p>
+</body>
+</html>
